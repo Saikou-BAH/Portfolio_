@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Churn</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #F4F2FF;
+            color: #333;
+        }
+        .header {
+            background-color: #0F056B;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .btn-custom {
+            background-color: #0F056B;
+            border-color: #0F056B;
+            font-size: 18px;
+            border-radius: 8px;
+        }
+        .btn-custom:hover {
+            background-color: #0F056B;
+        }
+        .card {
+            border: none;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .highlight {
+            color: #0F056B;
+        }
+        .portfolio-media {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    
+<header class="header">
+    <h1><strong>🔍 Prédiction du Churn Client avec Machine Learning</strong></h1>
+    <ul>
+        <li>Ce projet vise à anticiper les résiliations de clients à partir de leurs comportements et contrats, afin d'améliorer la rétention.</li>
+    </ul>
+</header>
+    
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Objectifs du projet</h2>
+            <ul>
+                <li>Comprendre les facteurs liés au churn client.</li>
+                <li>Tester différents modèles de classification supervisée.</li>
+                <li>Optimiser la capacité du modèle à généraliser sur des données externes.</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h2>Modèle</h2>
+            <img src="assets/images/portfolio/churn.png" class="img-fluid rounded shadow" alt="Dashboard Power BI">
+        </div>
+        <div class="col-md-4">
+            <h2>📊 Contenu du Projet</h2>
+            <ul>
+                <li>Nettoyage et encodage des données</li>
+                <li>Analyse exploratoire des comportements churn</li>
+                <li>Modélisation (Logistic Regression, KNN, Naive Bayes)</li>
+                <li>Évaluation via F1-score, AUC, courbes ROC</li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+<div class="container my-5">
+    <h2 class="text-center">🚀 Pourquoi ce Projet est Unique ?</h2>
+    <div class="row text-center mt-4">
+        <div class="col-md-4">
+            <h4>📊 Évaluation multi-niveaux</h4>
+            <p>J’ai évalué les modèles à la fois sur une validation interne et sur un jeu de test totalement externe, ce qui garantit une vraie capacité de généralisation.</p>
+        </div>
+        <div class="col-md-4">
+            <h4>📉 Analyse métier des erreurs</h4>
+            <p>J’ai interprété les résultats avec une vision métier, en identifiant les impacts des faux positifs et faux négatifs sur les décisions de fidélisation.</p>
+        </div>
+        <div class="col-md-4">
+            <h4>⚖️ Choix raisonné des modèles</h4>
+            <p>Des modèles puissants comme XGBoost ont été testés mais écartés à cause de l’overfitting. Le projet privilégie la robustesse à la complexité.</p>
+        </div>
+    </div>
+</div>
+    
+<div class="container my-5">
+    <h2 class="text-center">📌 Résultats et Insights</h2>
+    <div class="row text-center mt-4">
+        <div class="col-md-3">
+            <h3 class="text-primary">✅</h3>
+            <p>>Le modèle KNN a atteint 95 % de précision avec un AUC de 0.988.</p>
+        </div>
+        <div class="col-md-3">
+            <h3 class="text-primary">✅</h3>
+            <p>Logistic Regression et Naive Bayes ont aussi donné de bons résultats (86-87 % accuracy).</p>
+        </div>
+        <div class="col-md-3">
+            <h3 class="text-primary">✅</h3>
+            <p>XGBoost, RandomForest et LightGBM ont été retirés à cause de l’overfitting observé sur les tests externes.</p>
+        </div>
+        <div class="col-md-3">
+            <h3 class="text-primary">✅</h3>
+            <p>Les modèles simples se sont révélés plus robustes et généralisables.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <h2 class="text-center">🎥 Vidéo de Démonstration</h2>
+    <video class="portfolio-media" autoplay loop controls>
+        <source src="assets/images/portfolio/churn.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture de vidéos.
+    </video>
+
+    <p class="text-center mt-3">
+        Découvrez le projet en détail sur 
+        <a href="https://github.com/Saikou-BAH/Churn_Predict" target="_blank">
+            GitHub
+        </a> et explorez les analyses.
+    </p>
+</div>
+
+<div class="text-center my-5">
+    <a href="index.html" class="btn btn-custom px-4 py-2 text-white">Retour à la page précédente</a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function playVideo() {
+        var video = document.getElementById("myVideo");
+        video.muted = false;
+        video.play();
+    }
+</script>
+
+</body>
+</html>

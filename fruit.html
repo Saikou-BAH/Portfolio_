@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV Power BI - Projet</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #F4F2FF;
+            color: #333;
+        }
+        .header {
+            background-color: #0F056B;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .btn-custom {
+            background-color: #0F056B;
+            border-color: #0F056B;
+            font-size: 18px;
+            border-radius: 8px;
+        }
+        .btn-custom:hover {
+            background-color: #0F056B;
+        }
+        .card {
+            border: none;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .highlight {
+            color: #0F056B;
+        }
+        .portfolio-media {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    
+<header class="header">
+    <h1><strong>🍏 Analyse de la Qualité des Pommes avec Machine Learning</strong></h1>
+    <ul>
+        <li>L’objectif est d’identifier les facteurs influençant la qualité des pommes, de détecter des valeurs aberrantes et d’optimiser la précision des prédictions.</li>
+        <li>J’ai appliqué différentes approches d’apprentissage automatique, en testant et comparant plusieurs modèles pour trouver la meilleure solution.</li>
+    </ul>
+</header>
+    
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Objectifs du projet</h2>
+            <ul>
+                <li>Détecter les pommes de bonne et mauvaise qualité à partir de leurs caractéristiques.</li>
+                <li>Comparer différentes méthodes (XGBoost, SVC, Random Forest, etc.) pour sélectionner la meilleure approche.</li>
+                <li>Améliorer l’interprétabilité des résultats à l’aide de visualisations et d’analyses statistiques.</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h2>Modèle</h2>
+            <img src="assets/images/portfolio/image.png" class="img-fluid rounded shadow" alt="Dashboard Power BI">
+        </div>
+        <div class="col-md-4">
+            <h2>📊 Contenu du Projet</h2>
+            <ul>
+                <li>Prétraitement des données : Nettoyage, gestion des valeurs aberrantes et normalisation.</li>
+                <li>Analyse exploratoire : Étude des corrélations et visualisation des distributions.</li>
+                <li>Modélisation : Comparaison de XGBoost, Random Forest, SVM, KNN et LightGBM avec ajustement des hyperparamètres.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+<div class="container my-5">
+    <h2 class="text-center">🚀 Pourquoi ce Projet est Unique ?</h2>
+    <div class="row text-center mt-4">
+        <div class="col-md-4">
+            <h4>🔥 Approche comparative des modèles</h4>
+            <p>J’ai testé plusieurs modèles de machine learning pour identifier le plus performant.</p>
+        </div>
+        <div class="col-md-4">
+            <h4>📊 Interprétation et visualisation des résultats</h4>
+            <p>J’ai ajouté des graphiques et courbes ROC pour une meilleure compréhension des performances des modèles.</p>
+        </div>
+        <div class="col-md-4">
+            <h4>🎯 Optimisation des hyperparamètres</h4>
+            <p>J’ai appliqué une recherche d’hyperparamètres avancée pour améliorer la classification.</p>
+        </div>
+    </div>
+</div>
+    
+<div class="container my-5">
+    <h2 class="text-center">📌 Résultats et Insights</h2>
+    <div class="row text-center mt-4">
+        <div class="col-md-3">
+            <h3 class="text-primary">✅</h3>
+            <p>>XGBoost Optimisé et SVC Optimisé sont les meilleurs modèles avec une accuracy supérieure à 96%.</p>
+        </div>
+        <div class="col-md-3">
+            <h3 class="text-primary">✅</h3>
+            <p>La courbe ROC montre une excellente capacité de séparation entre les bonnes et mauvaises pommes.</p>
+        </div>
+        <div class="col-md-3">
+            <h3 class="text-primary">✅</h3>
+            <p>La variable Sweetness et Size ont un impact significatif sur la qualité des pommes.</p>
+        </div>
+        <div class="col-md-3">
+            <h3 class="text-primary">✅</h3>
+            <p>Les modèles robustes aux valeurs aberrantes (XGBoost, Random Forest) offrent de meilleures performances.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <h2 class="text-center">🎥 Vidéo de Démonstration</h2>
+    <video class="portfolio-media" autoplay loop controls>
+        <source src="assets/images/portfolio/pomme.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture de vidéos.
+    </video>
+
+    <p class="text-center mt-3">
+        Découvrez le projet en détail sur 
+        <a href="https://github.com/Saikou-BAH/fruit_quality" target="_blank">
+            GitHub
+        </a> et explorez les analyses.
+    </p>
+</div>
+
+<div class="text-center my-5">
+    <a href="index.html" class="btn btn-custom px-4 py-2 text-white">Retour à la page précédente</a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function playVideo() {
+        var video = document.getElementById("myVideo");
+        video.muted = false;
+        video.play();
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon CV Power BI - Projet</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #F4F2FF;
+            color: #333;
+        }
+        .header {
+            background-color: #0F056B;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+        .btn-custom {
+            background-color: #0F056B;
+            border-color: #0F056B;
+            font-size: 18px;
+            border-radius: 8px;
+        }
+        .btn-custom:hover {
+            background-color: #0F056B;
+        }
+        .card {
+            border: none;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            max-width: 100%;
+            background: #000;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .highlight {
+            color: #0F056B;
+        }
+        .portfolio-media {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <h1>Prédiction de la Consommation de Gaz dans un Aéroport</h1>
+    <ul style="list-style-type: none; padding-left: 0; font-size: 0.95rem; font-weight: normal;">
+        <li>Imaginez un aéroport fonctionnant 24h/24, où la consommation de gaz fluctue en fonction des saisons, du climat et des activités humaines.</li>
+        <li>Ce projet a pour ambition de prédire ces variations afin d’aider à optimiser l’utilisation des ressources énergétiques.</li>
+        <li>Grâce aux données et à des techniques avancées d’analyse, nous avons conçu un modèle capable d’anticiper la consommation de gaz sur les 3 prochains mois avec une précision remarquable.</li>
+    </ul>
+</header>
+
+<div class="container my-5">
+    <div class="row">
+        <div class="col-md-4">
+            <h2>Objectifs du projet</h2>
+            <ul>
+                <li>Anticiper les besoins énergétiques : éviter le gaspillage et optimiser les coûts.</li>
+                <li>Encourager une gestion plus écologique : ajuster la consommation en fonction des tendances.</li>
+                <li>Offrir un outil d’aide à la décision : permettre aux gestionnaires de l’aéroport d’avoir une vision claire des variations futures.</li>
+            </ul>
+        </div>
+        <div class="col-md-4">
+            <h2>Graphiques</h2>
+            <img src="assets/images/portfolio/gas.png" class="img-fluid rounded shadow" alt="Graphiques consommation gaz">
+        </div>
+        <div class="col-md-4">
+            <h2>Compétences clés</h2>
+            <ul>
+                <li>Analyse des séries temporelles : identification des tendances et saisonnalités.</li>
+                <li>Prétraitement des données : gestion des valeurs manquantes et transformation des variables.</li>
+                <li>Modélisation avancée : régression avec variables décalées (ARDL), évaluation des performances.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <h2 class="text-center">Les Atouts du Projet</h2>
+    <div class="row text-center mt-4">
+        <div class="col-md-4">
+            <h4>🔹 Nettoyage et Prétraitement Robuste</h4>
+            <p>🔍 Suppression des variables redondantes, interpolation des valeurs manquantes, et reconstruction des plages horaires absentes.</p>
+        </div>
+        <div class="col-md-4">
+            <h4>📊 Exploration et Visualisation des Données</h4>
+            <p>📈 Graphiques interactifs pour observer les variations saisonnières et les corrélations entre température, ensoleillement et consommation.</p>
+        </div>
+        <div class="col-md-4">
+            <h4>📈 Analyse et Décomposition des Séries Temporelles</h4>
+            <p>🕰️ Étude approfondie des tendances, stationnarité testée avec ADF, KPSS et Phillips-Perron.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <h2 class="text-center">Modélisation et Évaluation</h2>
+    <div class="row text-center mt-4">
+        <div class="col-md-3">
+            <h3 class="text-primary">Modélisation Optimisée</h3>
+            <p>Comparaison de modèles de régression pour une meilleure prédiction, avec une optimisation basée sur des métriques de performance.</p>
+        </div>
+        <div class="col-md-3">
+            <h3 class="text-primary">Prévisions</h3>
+            <p>Génération de prévisions pour les 3 mois suivants, utilisation des tendances historiques pour anticiper la consommation future.</p>
+        </div>
+        <div class="col-md-3">
+            <h3 class="text-primary">Résultats et Conclusions</h3>
+            <p>Le modèle ARDL2 a fourni les meilleures performances avec RMSE à 4413,32 et un R² à 0,96.</p>
+        </div>
+        <div class="col-md-3">
+            <h3 class="text-primary">Les analyses ont montré</h3>
+            <p>Une forte saisonnalité, une corrélation température-gaz négative, et la pertinence des variables décalées.</p>
+        </div>
+    </div>
+</div>
+
+<div class="container text-center">
+    <h2 class="text-center">Vidéo de démonstration</h2>
+    <video class="portfolio-media" autoplay loop controls>
+        <source src="assets/images/portfolio/test.mp4" type="video/mp4">
+        Votre navigateur ne supporte pas la lecture de vidéos.
+    </video>
+</div>
+
+<p class="text-center mt-3">
+    Découvrez le projet en détail sur 
+    <a href="https://github.com/Saikou-BAH/AirportGasForecast/blob/main/Readme.md" target="_blank">
+        GitHub
+    </a> et explorez les analyses et prédictions réalisées.
+</p>
+
+<div class="text-center my-5">
+    <a href="index.html" class="btn btn-custom px-4 py-2 text-white">Retour à la page précédente</a>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    function playVideo() {
+        var video = document.getElementById("myVideo");
+        video.muted = false;
+        video.play();
+    }
+</script>
+
+</body>
+</html>
